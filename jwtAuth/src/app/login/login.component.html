@@ -1,0 +1,17 @@
+<div class="container card mt-3" style="width: 40%;">
+    <h1 class="text-center">Login here</h1>
+    <form>
+        <mat-form-field appearance="legacy" style="width: 100%;">
+            <mat-label>username</mat-label>
+            <input [(ngModel)]="jwtRequest.username" name="username" matInput placeholder="username">
+          </mat-form-field>
+
+          <mat-form-field appearance="legacy" style="width: 100%;">
+            <mat-label>password</mat-label>
+            <input [(ngModel)]="jwtRequest.password" name="password" type="password" matInput placeholder="password">
+          </mat-form-field>
+    </form>
+    <div class="mb-2" [align]="'end'">
+        <button mat-raised-button color="warn" (click)="handleLogin()">Login</button>
+    </div>
+</div>
